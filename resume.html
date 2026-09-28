@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bibek Kumar Panda - Data Analyst Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: rgba(240, 238, 235, 1);
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .download-top-right {
+            position: fixed;
+            top: 28px;
+            right: 40px;
+            z-index: 999;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #4a148c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 22px;
+            font-size: 1rem;
+            font-family: inherit;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.18s;
+            box-shadow: 0 2px 8px rgba(74,20,140,0.13);
+        }
+        .download-btn:hover {
+            background: #6a1b9a;
+        }
+        .container {
+            width: 770px;
+            margin: 60px auto 40px auto;
+            background: #fff;
+            padding: 36px 38px;
+            border: 2px solid #111;
+            box-shadow: 0 3px 14px rgba(80,80,80,0.08);
+        }
+        header {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        header .name {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header .subtitle {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-left: 8px;
+        }
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 14px;
+            margin: 8px 0 10px 0;
+        }
+        .contact-row i {
+            font-size: 1rem;
+            color: #222;
+            margin-right: 3px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.13rem;
+            font-weight: bold;
+            border-top: 2px solid #111;
+            padding-top: 7px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .section-title i {
+            font-size: 1rem;
+            color: #444;
+        }
+        .edu {
+            margin-bottom: 12px;
+            position: relative;
+            min-height: 38px;
+        }
+        .edu .school-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .edu .highlight {
+            font-weight: bold;
+            font-size: 1.01rem;
+        }
+        .edu .institution {
+            color: #222;
+            margin-left: 1px;
+            font-size: 0.98rem;
+        }
+        .edu .period {
+            font-style: italic;
+            color: #444;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            margin-left: 12px;
+            white-space: nowrap;
+        }
+        ul.skills {
+            margin: 0 0 0 12px;
+            padding: 0;
+            font-size: 1rem;
+        }
+        ul.skills li {
+            margin-bottom: 0px;
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .exp, .proj {
+            margin-bottom: 14px;
+        }
+        .exp-title, .proj-title {
+            font-weight: bold;
+            font-size: 1.04rem;
+        }
+        .exp-details, .proj-details {
+            margin: 3px 0 0 0;
+            font-size: 0.98rem;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #111;
+        }
+        @media (max-width: 900px) {
+            .container { width: 98vw; padding: 16px 2vw; }
+        }
+        @media (max-width:600px) {
+            .download-top-right {
+                position: static;
+                display: flex;
+                justify-content: flex-end;
+                margin: 16px 0;
+                right: 0;
+                top: 0;
+            }
+            .container { padding: 6vw 2vw !important; }
+            .contact-row { flex-direction: column; gap: 7px; }
+        }
+    </style>
+</head>
+<body>
+  <div class="download-top-right">
+    <a href="Bibek-Kumar-panda_Dataanalyst.pdf" class="download-btn" download>
+      <i class="fa-solid fa-file-arrow-down"></i>
+      Download
+    </a>
+  </div>
+  <div class="container">
+    <header>
+      <div class="name">Bibek kumar panda<span class="subtitle">Associate Data Analyst</span></div>
+      <div class="contact-row">
+        <span><i class="fa-regular fa-envelope"></i> bibek4panda@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> 9078070595</span>
+        <span><i class="fa-solid fa-globe"></i> Portfolio website</span>
+        <span><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+      </div>
+    </header>
+    <div class="section">
+      <div class="section-title"><i class="fa-regular fa-user"></i>About me</div>
+      <div>
+        During my MBA, I found my passion for data analytics and loved turning raw data into meaningful insights. I started my career in marketing but soon realized I was more drawn to data-driven decision-making. As a data analyst, I enjoy solving problems and uncovering insights to help businesses grow.
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title"><i class="fa-solid fa-graduation-cap"></i>Education</div>
+      <div class="edu">
+        <div class="school-row">
+          <span class="highlight">MBA (Marketing, system management)</span>
+          <span class="period">2021 – 2023</span>
+        </div>
+        <span class="institution">Vignan Institute of Technology and Management</span>
+      </div>
+      <div class="edu">
+        <div class="school-row">
+          <span class="highlight">B.Sc (mathematics honours)</span>
+          <span class="period">2016 – 2021</span>
+        </div>
+        <span class="institution">Aska Science College, Aska</span>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</div>
+      <ul class="skills">
+        <li><span class="highlight">Data Preparation:</span> data cleaning, Pandas, Numpy, SQL</li>
+        <li><span class="highlight">Data Analysis:</span> EDA, Statistical Analysis, Mathematics, ETL</li>
+        <li><span class="highlight">Data Visualization:</span> Seaborn, Matplotlib, Power BI, Excel</li>
+        <li><span class="highlight">soft skill:</span> Communication, Presentation, Problem solving</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</div>
+      <div class="exp">
+        <span class="exp-title">Bidaal technology private limited, <i>Associate Data Analyst</i></span>
+        <span class="period">06-2024 – present | Noida, India</span>
+        <ul class="exp-details">
+          <li>Designed and implemented an <b>automated reporting system</b> for Smile Product using Microsoft Excel and PowerPoint, streamlining data analysis and report generation processes.</li>
+          <li>Developed interactive dashboards with advanced Excel features: Pivot Tables, Pivot Charts, and advanced functions for real-time tracking of key performance indicators (KPIs).</li>
+          <li>Linked Excel to PowerPoint to create an automated reporting system, enabling seamless transfer of data and visuals for consistently updated professional and error-free reporting for stakeholders.</li>
+          <li><b>Improved reporting efficiency by 70%</b>, reducing manual effort and increasing actionable insights on product performance to support business decisions.</li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="section">
+      <div class="section-title"><i class="fa-solid fa-diagram-project"></i>PROJECT</div>
+      <div class="proj">
+        <span class="proj-title">DATA ANALYSIS WITH PYTHON (SMARTPHONE)</span>
+        <span class="period">12-2024 – 12-2024</span>
+        <ul class="proj-details">
+          <li>Analysis of smartphone brands, price trends, and popular features, including Samsung's dominance.</li>
+        </ul>
+      </div>
+      <div class="proj">
+        <span class="proj-title">Bilinket Dashboard</span>
+        <span class="period">07-2023 – 09-2023</span>
+        <ul class="proj-details">
+          <li>Created Power BI dashboards for business decision making, improving operational efficiency by <b>15%.</b></li>
+        </ul>
+      </div>
+      <div class="proj">
+        <span class="proj-title">Industrial Safety Compliance System (YOLOv7 Detection)</span>
+        <span class="period">04-2024 – 04-2024</span>
+        <ul class="proj-details">
+          <li>Real-time detection of safety gear (helmets & vests) for industrial workers using YOLOv7 object detection.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
