@@ -1,251 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bibek Kumar Panda - Data Analyst Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <style>
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: rgba(240, 238, 235, 1);
-            color: #222;
-            margin: 0;
-            padding: 0;
-        }
-        .download-top-right {
-            position: fixed;
-            top: 28px;
-            right: 40px;
-            z-index: 999;
-        }
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            background: #4a148c;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            padding: 10px 22px;
-            font-size: 1rem;
-            font-family: inherit;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.18s;
-            box-shadow: 0 2px 8px rgba(74,20,140,0.13);
-        }
-        .download-btn:hover {
-            background: #6a1b9a;
-        }
-        .container {
-            width: 770px;
-            margin: 60px auto 40px auto;
-            background: #fff;
-            padding: 36px 38px;
-            border: 2px solid #111;
-            box-shadow: 0 3px 14px rgba(80,80,80,0.08);
-        }
-        header {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-        header .name {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        header .subtitle {
-            font-style: italic;
-            font-size: 1.1rem;
-            margin-left: 8px;
-        }
-        .contact-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 14px;
-            margin: 8px 0 10px 0;
-        }
-        .contact-row i {
-            font-size: 1rem;
-            color: #222;
-            margin-right: 3px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-size: 1.13rem;
-            font-weight: bold;
-            border-top: 2px solid #111;
-            padding-top: 7px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-        }
-        .section-title i {
-            font-size: 1rem;
-            color: #444;
-        }
-        .edu {
-            margin-bottom: 12px;
-            position: relative;
-            min-height: 38px;
-        }
-        .edu .school-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-        }
-        .edu .highlight {
-            font-weight: bold;
-            font-size: 1.01rem;
-        }
-        .edu .institution {
-            color: #222;
-            margin-left: 1px;
-            font-size: 0.98rem;
-        }
-        .edu .period {
-            font-style: italic;
-            color: #444;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-            margin-left: 12px;
-            white-space: nowrap;
-        }
-        ul.skills {
-            margin: 0 0 0 12px;
-            padding: 0;
-            font-size: 1rem;
-        }
-        ul.skills li {
-            margin-bottom: 0px;
-            list-style: disc;
-            margin-left: 20px;
-        }
-        .exp, .proj {
-            margin-bottom: 14px;
-        }
-        .exp-title, .proj-title {
-            font-weight: bold;
-            font-size: 1.04rem;
-        }
-        .exp-details, .proj-details {
-            margin: 3px 0 0 0;
-            font-size: 0.98rem;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #111;
-        }
-        @media (max-width: 900px) {
-            .container { width: 98vw; padding: 16px 2vw; }
-        }
-        @media (max-width:600px) {
-            .download-top-right {
-                position: static;
-                display: flex;
-                justify-content: flex-end;
-                margin: 16px 0;
-                right: 0;
-                top: 0;
-            }
-            .container { padding: 6vw 2vw !important; }
-            .contact-row { flex-direction: column; gap: 7px; }
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bibek Kumar Panda - Data Analyst Resume</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: rgb(240, 238, 235); font-family: 'Times New Roman', Times, serif; color: #000; }
+  .download { position: fixed; top: 20px; right: 30px; z-index: 9; }
+  .download a { background: #1f3864; color: #fff; padding: 9px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; font-family: Arial, sans-serif; font-size: 14px; }
+  .page { width: 210mm; height: 297mm; margin: 20px auto; background: #fff; padding: 9mm 13mm; font-size: 10pt; line-height: 1.17; box-shadow: 0 2px 12px rgba(0,0,0,.2); overflow: hidden; }
+  .name { text-align: center; font-size: 19pt; font-weight: bold; color: #1f3864; line-height: 1.15; }
+  .role { text-align: center; font-size: 10.5pt; font-weight: bold; color: #404040; margin-top: 1px; }
+  .contact { text-align: center; font-size: 8.5pt; font-weight: bold; margin: 6px 0 8px; }
+  .contact a { color: #000; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .contact .sep { margin: 0 6px; font-weight: normal; }
+  .summary { text-align: justify; margin-bottom: 4px; }
+  h2 { font-size: 10.5pt; font-weight: bold; color: #1f3864; text-transform: uppercase; border-bottom: 1px solid #1f3864; margin: 7px 0 3px; padding-bottom: 0; line-height: 1.2; }
+  ul { margin: 2px 0 2px; padding-left: 40px; }
+  li { text-align: justify; margin-bottom: 1.5px; padding-left: 2px; }
+  ul.sk li { margin-bottom: 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .row .l { font-weight: bold; }
+  .row .r { font-weight: bold; white-space: nowrap; }
+  .row .r.n { font-weight: normal; }
+  .tech { font-weight: bold; }
+  .proj { margin-top: 2px; }
+  .add { color: #c00000; font-style: italic; }
+  @media (max-width: 800px) { .page { width: 100%; height: auto; margin: 0; padding: 16px; } .download { position: static; text-align: right; padding: 10px; } }
+  @media print { body { background: #fff; } .page { margin: 0; box-shadow: none; } .download { display: none; } }
+</style>
 </head>
 <body>
-  <div class="download-top-right">
-    <a href="Bibek-Kumar-panda_Dataanalyst.pdf" class="download-btn" download>
-      <i class="fa-solid fa-file-arrow-down"></i>
-      Download
-    </a>
-  </div>
-  <div class="container">
-    <header>
-      <div class="name">Bibek kumar panda<span class="subtitle">Associate Data Analyst</span></div>
-      <div class="contact-row">
-        <span><i class="fa-regular fa-envelope"></i> bibek4panda@gmail.com</span>
-        <span><i class="fa-solid fa-phone"></i> 9078070595</span>
-        <span><i class="fa-solid fa-globe"></i> Portfolio website</span>
-        <span><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
-      </div>
-    </header>
-    <div class="section">
-      <div class="section-title"><i class="fa-regular fa-user"></i>About me</div>
-      <div>
-        During my MBA, I found my passion for data analytics and loved turning raw data into meaningful insights. I started my career in marketing but soon realized I was more drawn to data-driven decision-making. As a data analyst, I enjoy solving problems and uncovering insights to help businesses grow.
-      </div>
-    </div>
-    <div class="section">
-      <div class="section-title"><i class="fa-solid fa-graduation-cap"></i>Education</div>
-      <div class="edu">
-        <div class="school-row">
-          <span class="highlight">MBA (Marketing, system management)</span>
-          <span class="period">2021 – 2023</span>
-        </div>
-        <span class="institution">Vignan Institute of Technology and Management</span>
-      </div>
-      <div class="edu">
-        <div class="school-row">
-          <span class="highlight">B.Sc (mathematics honours)</span>
-          <span class="period">2016 – 2021</span>
-        </div>
-        <span class="institution">Aska Science College, Aska</span>
-      </div>
-    </div>
-    <div class="section">
-      <div class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</div>
-      <ul class="skills">
-        <li><span class="highlight">Data Preparation:</span> data cleaning, Pandas, Numpy, SQL</li>
-        <li><span class="highlight">Data Analysis:</span> EDA, Statistical Analysis, Mathematics, ETL</li>
-        <li><span class="highlight">Data Visualization:</span> Seaborn, Matplotlib, Power BI, Excel</li>
-        <li><span class="highlight">soft skill:</span> Communication, Presentation, Problem solving</li>
-      </ul>
-    </div>
-    <div class="section">
-      <div class="section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</div>
-      <div class="exp">
-        <span class="exp-title">Bidaal technology private limited, <i>Associate Data Analyst</i></span>
-        <span class="period">06-2024 – present | Noida, India</span>
-        <ul class="exp-details">
-          <li>Designed and implemented an <b>automated reporting system</b> for Smile Product using Microsoft Excel and PowerPoint, streamlining data analysis and report generation processes.</li>
-          <li>Developed interactive dashboards with advanced Excel features: Pivot Tables, Pivot Charts, and advanced functions for real-time tracking of key performance indicators (KPIs).</li>
-          <li>Linked Excel to PowerPoint to create an automated reporting system, enabling seamless transfer of data and visuals for consistently updated professional and error-free reporting for stakeholders.</li>
-          <li><b>Improved reporting efficiency by 70%</b>, reducing manual effort and increasing actionable insights on product performance to support business decisions.</li>
-        </ul>
-      </div>
-      
-    </div>
-    <div class="section">
-      <div class="section-title"><i class="fa-solid fa-diagram-project"></i>PROJECT</div>
-      <div class="proj">
-        <span class="proj-title">DATA ANALYSIS WITH PYTHON (SMARTPHONE)</span>
-        <span class="period">12-2024 – 12-2024</span>
-        <ul class="proj-details">
-          <li>Analysis of smartphone brands, price trends, and popular features, including Samsung's dominance.</li>
-        </ul>
-      </div>
-      <div class="proj">
-        <span class="proj-title">Bilinket Dashboard</span>
-        <span class="period">07-2023 – 09-2023</span>
-        <ul class="proj-details">
-          <li>Created Power BI dashboards for business decision making, improving operational efficiency by <b>15%.</b></li>
-        </ul>
-      </div>
-      <div class="proj">
-        <span class="proj-title">Industrial Safety Compliance System (YOLOv7 Detection)</span>
-        <span class="period">04-2024 – 04-2024</span>
-        <ul class="proj-details">
-          <li>Real-time detection of safety gear (helmets & vests) for industrial workers using YOLOv7 object detection.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="download"><a href="Bibek-Kumar-panda_Dataanalyst.pdf" download>Download</a></div>
+<div class="page">
+  <div class="name">Bibek Kumar Panda</div>
+  <div class="role">Data Analyst | MIS &amp; Business Intelligence</div>
+  <div class="contact"><a href="mailto:bibek4panda@gmail.com">bibek4panda@gmail.com</a><span class="sep">|</span><a href="tel:+919078070595">+91 9078070595</a><span class="sep">|</span>Bengaluru, Karnataka<span class="sep">|</span><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener">LinkedIn</a><span class="sep">|</span><a href="https://YOUR-PORTFOLIO-URL" target="_blank" rel="noopener">Portfolio</a></div>
+
+  <div class="summary">Data Analyst with 2+ years of experience delivering SQL, Power BI, and Excel based reporting solutions for operations and workplace safety analytics. Skilled in building automated MIS dashboards, DAX driven Power BI reports, and Python-based data pipelines that have cut manual reporting effort by up to 95%. Experienced translating large, multi-location datasets into actionable insights for leadership. Seeking Data Analyst / Business Analyst roles where analytical rigor and automation drive measurable business impact.</div>
+
+  <h2>Skills</h2>
+  <ul class="sk">
+    <li><b>Tools &amp; Languages:</b> SQL, Python (Pandas, NumPy, Matplotlib, Scikit-learn), Excel (Pivot Tables, VLOOKUP/INDEX-MATCH, Power Query), Selenium</li>
+    <li><b>BI &amp; Reporting:</b> Power BI (DAX, Power Query, Calculated Columns, Measures, Drill-through, Slicers, Bookmarks, Refresh Optimization), KPI Dashboards, MIS Reporting, Data Storytelling</li>
+    <li><b>Data Concepts:</b> Data Modelling, Star Schema, Data Warehousing, Data Cleaning &amp; Validation, ETL</li>
+    <li><b>Soft Skills:</b> Problem Solving, Stakeholder Communication, Critical Thinking</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <div class="row"><span class="l">Data Analyst | Bidaal Technology Private Limited</span><span class="r">06/2024 – Present | Noida</span></div>
+  <ul style="margin-top:8px">
+    <li>Automated monthly MIS reporting using Power BI, Power Query, and PowerPoint, reducing reporting turnaround by 95% and delivering accurate, real-time insights to leadership.</li>
+    <li>Designed a DGMS-compliant Excel dashboard analyzing 2,500+ GPS-tagged illumination readings across 23 mining locations using a 3-sheet statistical architecture (percentiles, variance, conditional logic), enabling 100% compliance verification accuracy and cutting manual reporting effort by 90%.</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <div class="proj row"><span class="l">Site Safety Violation Analytics Dashboard&nbsp; <span class="tech">Power BI, SQL</span></span><span class="r">2026</span></div>
+  <ul>
+    <li>Built a Power BI dashboard integrating SQL data sources with ETL, star schema, and 30+ DAX measures; reduced manual reporting by 80% and identified key safety risks.</li>
+    <li>Designed DAX-based alerts and annotated dashboards, enabling stakeholders to quickly identify risks and drive data-backed safety decisions.</li>
+    <li class="add">[ADD: dataset size and one-line business problem]</li>
+  </ul>
+  <div class="proj row"><span class="l">Business Intelligence Sales Analytics Dashboard — <span class="tech">Power BI, SQL</span></span><span class="r">2026</span></div>
+  <ul>
+    <li>Designed and implemented a Power BI dashboard analyzing sales, customer behaviour, and operational metrics to support data-driven business strategy.</li>
+    <li>Conducted geospatial analysis to identify high-demand regions and visualized top-performing products to optimize inventory and marketing.</li>
+    <li>Monitored delivery times and order fulfilment rates, enabling a 15% improvement in operational efficiency through data-driven recommendations.</li>
+  </ul>
+  <div class="proj row"><span class="l">GEM Bid Scraper&nbsp;&nbsp; <span class="tech">Python, SQL, Selenium</span></span><span class="r">2026</span></div>
+  <ul>
+    <li>Built a GEM tender pipeline using Selenium to scrape 1,000+ pages of Gem portal bids, extract PDF content, and store structured metadata in SQLite, eliminating manual document review.</li>
+    <li>Integrated DeepSeek v3 LLM via AWS Bedrock to auto-score each bid across 5 dimensions, generating ranked shortlists and decision summaries from raw PDF text.</li>
+    <li>Deployed a live Gradio dashboard with full-text search, paginated bid tables, status tracking, editable remarks, and CSV export, supported by a scheduled cron pipeline and system service for 24/7 production operation.</li>
+  </ul>
+  <div class="proj row"><span class="l">Face Recognition Attendance Management System <span class="tech">Python, Excel</span></span><span class="r">2026</span></div>
+  <ul>
+    <li>Built an Excel-based attendance system for 30+ staff, processing 1,800+ face logs and automating late, half-day, and overtime tracking with 100% accuracy.</li>
+    <li>Built an Excel KPI dashboard with 6 cards and 4 charts, cutting reporting time by 80% and enabling real-time workforce insights.</li>
+    <li>Built a summary analytics module for 8 departments and 30+ employees, enabling instant insights and 5x faster HR decisions while eliminating manual reporting.</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul><li class="add">[ADD: relevant certification — e.g., Microsoft PL-300 (Power BI Data Analyst), completed or in progress]</li></ul>
+
+  <h2>Education</h2>
+  <div class="row"><span class="l">MBA, Biju Patnaik University of Technology (BPUT), Berhampur</span><span class="r n">01/2021 – 02/2023</span></div>
+
+  <h2>Achievements</h2>
+  <ul><li>Recognized by Bidaal leadership for building an AI-driven workplace safety surveillance analytics system. <span class="add">[ADD: date / award name / scope for credibility]</span></li></ul>
+</div>
 </body>
 </html>
